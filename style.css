@@ -1,0 +1,212 @@
+/* .list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3px;
+} */
+/* .list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+} */
+
+/* Another one */
+/* .start > div{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+} */
+/* .start{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 1fr 45px;
+    grid-template-areas: 
+    /* "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f"; *
+} */
+/* .header{
+    background-color: #11d698;
+    grid-column: 2 / -1;
+    /* grid-area: h; *
+} */
+/* .menu{
+    background-color: #cb0e08;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    /* grid-area: m; *
+} */
+/* .content{
+    background-color: blue;
+    grid-column: 2 / -1;
+    /* grid-area: c; *
+} */
+/* .footer{
+    background-color: green;
+    grid-column: 1 / -1;
+    /* grid-area: f; *
+} */
+
+
+/* Another one.... */
+.start .list{
+    padding-top: 50px;
+    height: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(2, 60px);
+    /* grid-auto-rows: 200px; */
+    grid-gap:3px;
+    justify-content: center;
+}
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Another one... */
+.masonary_gird_title h2{
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin: 20px auto;
+}
+.masonary_grid_layout{
+    padding-bottom: 100px !important;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap:3px;
+    padding: 0;
+    grid-auto-flow: dense;
+}
+.masonary_grid_layout div{
+    padding: 0;
+}
+.masonary_grid_layout div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.masonary_grid_layout div.justify{
+    grid-column: auto / span 2;
+}
+.masonary_grid_layout div.vertical{
+    grid-row: auto / span 2;
+}
+.masonary_grid_layout div.big{
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+}
+
+/* Modal */
+
+.preview_section{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,.8);
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s ease-in-out;
+}
+#modal img{
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    cursor: no-drop;
+}
+#modal .close_btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 26px;
+    text-align: center;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    display: inline-block;
+    line-height: 2px !important;
+    padding-bottom: 6px;
+}
+
+
+/* change_bg_color */
+.change_bg_color{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+.change_bg_color button{
+    border: 2px solid #3a3a3c;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+.change_bg_color button:hover{
+    transition: all .3s ease-in-out;
+    background-color: black;
+    color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    width: 0px;
+    background-color: red;
+    box-shadow: 0 0 90px 3px red;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    width: 0px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
